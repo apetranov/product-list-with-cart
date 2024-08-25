@@ -45,7 +45,7 @@ export default function Cart({
                   <span>${(item.price * item.quantity).toFixed(2)}</span>
                   <button
                     onClick={() => removeFromCart(item.name)}
-                    className="text-sm outline outline-3 hover:outline-red-600 transition-all duration-300 outline-gray-400 p-3 rounded-full text-red-600 hover:text-red-600"
+                    className="text-sm outline outline-3 hover:outline-red-600 transition-all duration-300 outline-gray-400 py-5 px-6 rounded-full text-red-600 hover:text-red-600"
                   >
                     X
                   </button>
