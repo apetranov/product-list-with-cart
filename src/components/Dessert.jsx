@@ -6,7 +6,7 @@ export default function Dessert({ updateCart, itemCounts, setItemCounts }) {
 
   useEffect(() => {
     // Fetch data from the public directory
-    fetch("./data.json")
+    fetch("/data.json")
       .then((response) => response.json())
       .then((data) => setDesserts(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -67,7 +67,7 @@ export default function Dessert({ updateCart, itemCounts, setItemCounts }) {
                 />
               )}
               <button className="absolute flex flex-row space-x-2 justify-center items-center w-3/4 mx-auto bottom-0 inset-x-0 transform translate-y-1/2 outline bg-white outline-1 outline-black shadow-lg p-3 rounded-full transition-all duration-300">
-                <img src="./assets/images/icon-add-to-cart.svg" alt="" />
+                <img src="/assets/images/icon-add-to-cart.svg" alt="" />
                 <p className="font-semibold">Add to cart</p>
               </button>
               {showControls && (
@@ -75,14 +75,14 @@ export default function Dessert({ updateCart, itemCounts, setItemCounts }) {
                   <img
                     className="outline outline-3 outline-white px-2 py-3 rounded-full cursor-pointer"
                     onClick={() => handleDecrement(index)}
-                    src="./assets/images/icon-decrement-quantity.svg"
+                    src="/assets/images/icon-decrement-quantity.svg"
                     alt=""
                   />
                   <p className="font-semibold">{itemCount}</p>
                   <img
                     className="outline outline-3 outline-white p-2 rounded-full cursor-pointer"
                     onClick={() => handleIncrement(index)}
-                    src="./assets/images/icon-increment-quantity.svg"
+                    src="/assets/images/icon-increment-quantity.svg"
                     alt=""
                   />
                 </div>

@@ -49,7 +49,7 @@ export default function Cart({
                   >
                     <img
                       className="outline outline-3 hover:outline-red-600 transition-all duration-300 outline-gray-400 p-2 rounded-full"
-                      src="./assets/images/icon-remove-item.svg"
+                      src="/assets/images/icon-remove-item.svg"
                       alt=""
                     />
                   </button>
@@ -67,7 +67,7 @@ export default function Cart({
             </h1>
           </div>
           <div className="bg-gray-100 p-5 rounded-lg flex flex-row space-x-4 justify-center items-center">
-            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <img src="/assets/images/icon-carbon-neutral.svg" alt="" />
 
             <span>
               This is a <strong>carbon-neutral</strong> delivery
