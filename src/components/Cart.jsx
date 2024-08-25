@@ -54,7 +54,7 @@ export default function Cart({
             </div>
           ))}
           <div className="flex flex-row space-x-10 justify-center items-center">
-            <h1 className="text-xl">Order total</h1>
+            <h1 className="text-xl text-center">Order total</h1>
             <h1 className="text-3xl font-bold">
               $
               {cart
@@ -65,7 +65,7 @@ export default function Cart({
           <div className="bg-gray-100 p-5 rounded-lg flex flex-row space-x-4 justify-center items-center">
             <img src="/assets/images/icon-carbon-neutral.svg" alt="" />
 
-            <span>
+            <span className="text-center">
               This is a <strong>carbon-neutral</strong> delivery
             </span>
           </div>
