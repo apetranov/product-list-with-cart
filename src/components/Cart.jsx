@@ -45,13 +45,9 @@ export default function Cart({
                   <span>${(item.price * item.quantity).toFixed(2)}</span>
                   <button
                     onClick={() => removeFromCart(item.name)}
-                    className="ml-4 text-red-600 hover:text-red-800"
+                    className="text-sm outline outline-3 hover:outline-red-600 transition-all duration-300 outline-gray-400 p-3 rounded-full text-red-600 hover:text-red-600"
                   >
-                    <img
-                      className="outline outline-3 hover:outline-red-600 transition-all duration-300 outline-gray-400 p-2 rounded-full"
-                      src="/assets/images/icon-remove-item.svg"
-                      alt=""
-                    />
+                    X
                   </button>
                 </div>
               </div>
