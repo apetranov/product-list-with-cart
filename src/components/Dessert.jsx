@@ -6,7 +6,7 @@ export default function Dessert({ updateCart, itemCounts, setItemCounts }) {
 
   useEffect(() => {
     // Fetch data from the public directory
-    fetch("/data.json")
+    fetch("data.json")
       .then((response) => response.json())
       .then((data) => setDesserts(data))
       .catch((error) => console.error("Error fetching data:", error));
