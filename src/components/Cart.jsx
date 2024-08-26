@@ -30,7 +30,7 @@ export default function Cart({
           <h1 className="text-3xl font-bold text-red-600">Your cart (0)</h1>
         </div>
       ) : (
-        <div className="p-12 flex flex-col justify-center items-center shadow-lg rounded-lg space-y-10 w-full">
+        <div className="p-12 flex flex-col justify-center items-center shadow-lg rounded-lg space-y-10 overflow-auto w-full">
           <h1 className="text-3xl font-bold mb-5 text-red-600">
             Your cart ({cart.reduce((total, item) => total + item.quantity, 0)})
           </h1>
