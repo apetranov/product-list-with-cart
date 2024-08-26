@@ -7,6 +7,7 @@ export default function Cart({
   removeFromCart,
   clearCart,
   setItemCounts,
+  setShowpopup,
 }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
@@ -70,7 +71,7 @@ export default function Cart({
             </span>
           </div>
           <button
-            onClick={handleStartNewOrder}
+            onClick={() => setShowpopup(true)}
             className="text-white p-4 font-semibold hover:text-red-600 transition-all duration-300 hover:bg-white outline outline-3 outline-red-600 mx-auto bg-red-600 rounded-full w-full"
           >
             Confirm order

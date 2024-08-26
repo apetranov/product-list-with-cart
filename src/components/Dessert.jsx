@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
 
-export default function Dessert({ updateCart, itemCounts, setItemCounts }) {
-  const [desserts, setDesserts] = useState([]);
+export default function Dessert({
+  updateCart,
+  itemCounts,
+  setItemCounts,
+  desserts,
+  setDesserts,
+}) {
   const [hoveredIndex, setHoveredIndex] = useState(null); // State to track hover
-
-  useEffect(() => {
-    // Fetch data from the public directory
-    fetch("/data.json")
-      .then((response) => response.json())
-      .then((data) => setDesserts(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
 
   const handleIncrement = (index) => {
     const dessert = desserts[index];
