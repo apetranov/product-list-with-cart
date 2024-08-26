@@ -27,9 +27,11 @@ export default function Cart({
       <ToastContainer />
       {cart.length === 0 ? (
         <div className="p-12 flex flex-col justify-center items-center shadow-lg rounded-lg space-y-10 w-full">
-          <h1 className="text-3xl font-bold text-red-600">Your cart (0)</h1>
+          <h1 className="text-3xl text-center font-bold text-red-600">
+            Your cart (0)
+          </h1>
           <img src="/assets/images/illustration-empty-cart.svg" alt="" />
-          <p className="text-lg text-gray-400">
+          <p className="text-lg text-center text-gray-400">
             Your added items will appear here
           </p>
         </div>
