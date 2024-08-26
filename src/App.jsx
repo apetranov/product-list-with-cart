@@ -69,6 +69,7 @@ function App() {
               className="w-16 h-16"
             />
             <p className="text-3xl font-bold text-center">Order confirmed!</p>
+            <p className="text-gray-400">We hope you enjoy your food!</p>
             {cart.map((item) => (
               <div key={item.name} className="flex flex-col w-full">
                 <div className="flex flex-col justify-center items-center space-y-5">
